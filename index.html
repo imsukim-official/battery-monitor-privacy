@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery Monitor – Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1c1c1e; --muted:#5f6368; --line:#e3e3e6; --accent:#1b5e20; --card:#f4f7f4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121412; --fg:#e6e8e6; --muted:#a0a6a0; --line:#2c302c; --accent:#a5d6a7; --card:#1a1f1a; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans KR",sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2rem 1rem 4rem; }
+  h1 { font-size:1.7rem; line-height:1.25; margin:0 0 .25rem; }
+  h2 { font-size:1.15rem; margin:2.2rem 0 .5rem; color:var(--accent); }
+  p, li { overflow-wrap:anywhere; }
+  .meta { color:var(--muted); margin:0 0 1.5rem; }
+  .lang { margin:0 0 2rem; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem 1.25rem; }
+  .summary ul { margin:.25rem 0 0; padding-left:1.2rem; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:.5rem .6rem; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  .scroll { overflow-x:auto; }
+  a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:3.5rem 0; }
+  code { font-size:.9em; }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="#en">English</a> · <a href="#ko">한국어</a></p>
+
+<!-- ───────────────────────────── English ───────────────────────────── -->
+<section id="en" lang="en">
+<h1>Battery Monitor – Privacy Policy</h1>
+<p class="meta">Effective 19 September 2026 · App package <code>dev.iskim.batterymonitor</code></p>
+
+<div class="summary">
+<strong>In short</strong>
+<ul>
+  <li>Battery Monitor records your phone's battery readings <strong>on your phone only</strong>. They are never sent to us or to anyone else. We run no server and have no way to see them.</li>
+  <li>There is no account, no sign-in, no analytics and no crash reporting.</li>
+  <li>The app shows one advertising banner, provided by Google AdMob. <strong>The ad is the only part of the app that uses the internet</strong>, and Google collects some device data to deliver it, including the advertising ID.</li>
+</ul>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>Battery Monitor is published by an individual developer, imsu kim ("we"). Contact: <a href="mailto:imsukim.official@gmail.com">imsukim.official@gmail.com</a>.</p>
+
+<h2>2. What the app records, and where it stays</h2>
+<p>When you start a recording, the app reads the following from Android's battery interfaces at the interval you choose and stores it in a database inside the app's private storage on your device:</p>
+<ul>
+  <li>battery level, voltage, temperature, current and charge counter;</li>
+  <li>charging status, power source (AC, USB, wireless, none) and battery health;</li>
+  <li>the time of each reading, and the charge and discharge sessions derived from them;</li>
+  <li>your settings (sampling interval, retention period, alert thresholds) and a learned calibration describing how your device reports current.</li>
+</ul>
+<p>This information describes the battery, not you. It contains no name, contact details, location, files, messages or identifiers. <strong>It is never transmitted off your device by the app.</strong> The recording runs in a part of the app that makes no network connections at all.</p>
+<p>The data is also excluded from Android's cloud backup and from device-to-device transfer, so it is not copied to your Google account or to a new phone.</p>
+
+<h2>3. How long it is kept, and how to delete it</h2>
+<ul>
+  <li>While a recording is running, readings older than the retention period are deleted automatically. The default is 14 days; Settings offers 3 to 90 days. Trimming happens as part of recording, so when no recording is running, existing readings stay until the next recording or until you clear them.</li>
+  <li><em>Settings → Clear history</em> deletes all recorded readings and sessions immediately.</li>
+  <li>Uninstalling the app deletes everything it has stored.</li>
+</ul>
+<p>Because we never receive your data, there is nothing for us to delete on your behalf and nothing we could hand to anyone.</p>
+
+<h2>4. Security</h2>
+<ul>
+  <li>Recorded readings and settings are kept in the app's private storage, which Android's application sandbox protects from other apps. On current Android devices this storage is also covered by the device's built-in encryption.</li>
+  <li>They are excluded from cloud backup and device-to-device transfer, so no second copy exists outside the phone unless you export one yourself.</li>
+  <li>The app itself sends nothing over the network. The advertising SDK communicates with Google over encrypted connections (HTTPS).</li>
+  <li>The app requests no permission that would let it read your files, contacts, location, camera or microphone.</li>
+</ul>
+
+<h2>5. Export</h2>
+<p><em>Settings → Export history</em> writes your recorded history as JSON files to a folder that <strong>you</strong> pick through Android's system file picker. The app does this only when you ask. Once the files exist they are ordinary files under your control; if you place them in a synced or shared folder, that service's own terms apply.</p>
+
+<h2>6. Advertising (Google AdMob)</h2>
+<p>The app displays a banner advertisement using the Google Mobile Ads SDK. The banner is loaded only while the app is open on screen; it is paused when the app goes to the background, and it is never loaded by the background recording.</p>
+<p>To deliver and measure ads, Google's SDK may collect and process, directly from your device:</p>
+<ul>
+  <li>the advertising ID of your device;</li>
+  <li>your IP address, from which an approximate location may be inferred;</li>
+  <li>device and app information (model, OS version, language, app version) and diagnostic data;</li>
+  <li>how you interact with ads (views and taps).</li>
+</ul>
+<p>We do not receive this data and cannot access it. None of your recorded battery history is shared with Google or any advertiser. Google acts under its own privacy policy:</p>
+<ul>
+  <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+<p><strong>Your choices.</strong> In Android <em>Settings → Google → Ads</em> (on some devices <em>Settings → Privacy → Ads</em>) you can reset or delete your advertising ID and turn off ad personalisation. You can also manage personalisation at <a href="https://adssettings.google.com">adssettings.google.com</a>.</p>
+
+<h2>7. Permissions</h2>
+<div class="scroll">
+<table>
+  <tr><th>Permission</th><th>Why the app needs it</th></tr>
+  <tr><td>Foreground service (special use)</td><td>Keeps a recording running while the screen is off or another app is in front.</td></tr>
+  <tr><td>Notifications</td><td>Android requires a visible notification for a running recording; also used for the threshold alerts you configure.</td></tr>
+  <tr><td>Wake lock</td><td>Keeps readings on schedule at short sampling intervals while the screen is off.</td></tr>
+  <tr><td>Internet, network state</td><td>Used only by the advertising banner.</td></tr>
+  <tr><td>Advertising ID and related ad-services permissions</td><td>Added by the Google Mobile Ads SDK for the purposes in section 6.</td></tr>
+</table>
+</div>
+<p>The app does not request access to your location, contacts, camera, microphone, photos or files.</p>
+
+<h2>8. Children</h2>
+<p>Battery Monitor is a general-purpose utility and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>This policy is also linked from the app under <em>Settings → Privacy policy</em>. If the app's data practices change, this page will be updated and the effective date above will change before the new version of the app is released.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:imsukim.official@gmail.com">imsukim.official@gmail.com</a>.</p>
+</section>
+
+<hr>
+
+<!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+<section id="ko" lang="ko">
+<h1>Battery Monitor 개인정보처리방침</h1>
+<p class="meta">시행일 2026년 9월 19일 · 앱 패키지 <code>dev.iskim.batterymonitor</code></p>
+
+<div class="summary">
+<strong>요약</strong>
+<ul>
+  <li>Battery Monitor는 휴대전화의 배터리 측정값을 <strong>사용자의 기기 안에만</strong> 기록합니다. 개발자나 제3자에게 전송하지 않습니다. 개발자는 서버를 운영하지 않으며 이 기록을 볼 방법이 없습니다.</li>
+  <li>계정, 로그인, 사용 통계 수집, 오류 보고 기능이 없습니다.</li>
+  <li>앱에는 Google AdMob이 제공하는 배너 광고가 하나 있습니다. <strong>앱에서 인터넷을 사용하는 부분은 이 광고뿐이며</strong>, 광고 제공을 위해 Google이 광고 ID를 포함한 일부 기기 정보를 수집합니다.</li>
+</ul>
+</div>
+
+<h2>1. 개인정보 처리 책임자</h2>
+<p>Battery Monitor는 개인 개발자 imsu kim(이하 "개발자")이 배포합니다. 문의: <a href="mailto:imsukim.official@gmail.com">imsukim.official@gmail.com</a></p>
+
+<h2>2. 앱이 기록하는 항목과 보관 위치</h2>
+<p>사용자가 기록을 시작하면 앱은 선택한 주기마다 Android의 배터리 인터페이스에서 다음 항목을 읽어 기기 내 앱 전용 저장소의 데이터베이스에 저장합니다.</p>
+<ul>
+  <li>배터리 잔량, 전압, 온도, 전류, 충전량 카운터</li>
+  <li>충전 상태, 전원 종류(AC·USB·무선·없음), 배터리 상태(health)</li>
+  <li>각 측정 시각과, 이로부터 계산한 충전·방전 세션</li>
+  <li>사용자 설정(측정 주기, 보관 기간, 알림 기준값)과 기기의 전류 보고 방식에 대한 보정값</li>
+</ul>
+<p>이 정보는 배터리에 관한 것이며 이름, 연락처, 위치, 파일, 메시지, 식별자를 포함하지 않습니다. <strong>앱은 이 정보를 기기 밖으로 전송하지 않습니다.</strong> 기록을 담당하는 부분은 네트워크에 전혀 연결하지 않습니다.</p>
+<p>또한 이 데이터는 Android 클라우드 백업과 기기 간 데이터 이전 대상에서 제외되어 있어 Google 계정이나 새 휴대전화로 복사되지 않습니다.</p>
+
+<h2>3. 보관 기간과 삭제 방법</h2>
+<ul>
+  <li>기록이 실행되는 동안, 보관 기간이 지난 측정값은 자동으로 삭제됩니다. 기본값은 14일이며 설정에서 3일~90일 중에서 고를 수 있습니다. 정리는 기록 과정의 일부로 이루어지므로, 기록을 하지 않는 동안에는 기존 측정값이 다음 기록 때까지 또는 사용자가 직접 지울 때까지 남아 있습니다.</li>
+  <li><em>설정 → Clear history(기록 지우기)</em>를 누르면 모든 측정값과 세션이 즉시 삭제됩니다.</li>
+  <li>앱을 삭제하면 앱이 저장한 모든 데이터가 함께 삭제됩니다.</li>
+</ul>
+<p>개발자는 사용자의 데이터를 전달받지 않으므로, 개발자가 대신 삭제하거나 제3자에게 제공할 데이터가 존재하지 않습니다.</p>
+
+<h2>4. 보안</h2>
+<ul>
+  <li>기록된 측정값과 설정은 앱 전용 저장소에 보관되며, Android의 애플리케이션 샌드박스가 다른 앱의 접근을 막습니다. 최신 Android 기기에서는 이 저장소에 기기의 기본 암호화도 적용됩니다.</li>
+  <li>클라우드 백업과 기기 간 데이터 이전에서 제외되므로, 사용자가 직접 내보내지 않는 한 휴대전화 밖에 사본이 존재하지 않습니다.</li>
+  <li>앱 자체는 네트워크로 아무것도 전송하지 않습니다. 광고 SDK는 Google과 암호화된 연결(HTTPS)로 통신합니다.</li>
+  <li>앱은 파일, 연락처, 위치, 카메라, 마이크를 읽을 수 있는 권한을 요청하지 않습니다.</li>
+</ul>
+
+<h2>5. 내보내기</h2>
+<p><em>설정 → Export history(기록 내보내기)</em>는 기록을 JSON 파일로 만들어 <strong>사용자가</strong> Android 시스템 파일 선택기에서 직접 고른 폴더에 저장합니다. 사용자가 요청할 때만 동작합니다. 만들어진 파일은 사용자가 관리하는 일반 파일이며, 동기화·공유 폴더에 저장한 경우 해당 서비스의 약관이 적용됩니다.</p>
+
+<h2>6. 광고 (Google AdMob)</h2>
+<p>앱은 Google Mobile Ads SDK를 사용해 배너 광고를 표시합니다. 광고는 앱 화면이 보이는 동안에만 불러오며, 앱이 백그라운드로 가면 일시 중지됩니다. 백그라운드 기록 중에는 광고를 불러오지 않습니다.</p>
+<p>광고 제공과 성과 측정을 위해 Google의 SDK가 기기에서 직접 다음 정보를 수집·처리할 수 있습니다.</p>
+<ul>
+  <li>기기의 광고 ID</li>
+  <li>IP 주소(대략적인 위치를 추정하는 데 쓰일 수 있음)</li>
+  <li>기기 및 앱 정보(모델, OS 버전, 언어, 앱 버전)와 진단 정보</li>
+  <li>광고 조회·클릭 등 광고와의 상호작용</li>
+</ul>
+<p>개발자는 이 정보를 전달받지 않으며 열람할 수 없습니다. 기록된 배터리 데이터는 Google이나 광고주에게 제공되지 않습니다. Google의 처리에는 Google의 방침이 적용됩니다.</p>
+<ul>
+  <li><a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google이 서비스를 사용하는 앱의 정보를 이용하는 방식</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></li>
+</ul>
+<p><strong>사용자의 선택권.</strong> Android <em>설정 → Google → 광고</em>(기기에 따라 <em>설정 → 개인정보 보호 → 광고</em>)에서 광고 ID를 재설정·삭제하거나 맞춤 광고를 끌 수 있습니다. <a href="https://adssettings.google.com">adssettings.google.com</a>에서도 설정할 수 있습니다.</p>
+
+<h2>7. 권한</h2>
+<div class="scroll">
+<table>
+  <tr><th>권한</th><th>필요한 이유</th></tr>
+  <tr><td>포그라운드 서비스(특수 용도)</td><td>화면이 꺼져 있거나 다른 앱을 쓰는 동안에도 기록을 계속하기 위해</td></tr>
+  <tr><td>알림</td><td>Android는 실행 중인 기록에 대해 알림 표시를 요구합니다. 사용자가 설정한 기준값 알림에도 사용됩니다.</td></tr>
+  <tr><td>절전 모드 해제(Wake lock)</td><td>화면이 꺼진 상태에서 짧은 주기의 측정 시각을 지키기 위해</td></tr>
+  <tr><td>인터넷, 네트워크 상태</td><td>광고 배너에만 사용됩니다.</td></tr>
+  <tr><td>광고 ID 및 관련 광고 서비스 권한</td><td>6항의 목적을 위해 Google Mobile Ads SDK가 추가합니다.</td></tr>
+</table>
+</div>
+<p>앱은 위치, 연락처, 카메라, 마이크, 사진, 파일에 대한 접근 권한을 요청하지 않습니다.</p>
+
+<h2>8. 아동</h2>
+<p>Battery Monitor는 일반 사용자용 유틸리티이며 만 14세 미만 아동을 대상으로 하지 않습니다. 개발자는 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+<h2>9. 방침의 변경</h2>
+<p>이 방침은 앱의 <em>설정 → 개인정보처리방침</em>에서도 열 수 있습니다. 앱의 데이터 처리 방식이 바뀌는 경우, 해당 버전을 배포하기 전에 이 페이지를 수정하고 위 시행일을 변경합니다.</p>
+
+<h2>10. 문의</h2>
+<p>이 방침에 관한 문의: <a href="mailto:imsukim.official@gmail.com">imsukim.official@gmail.com</a></p>
+</section>
+
+</main>
+</body>
+</html>
